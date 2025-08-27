@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPWELL - Your Caps Store</title>
+    <style>
+        body {
+            background-color: #121212; /* A slightly softer black */
+            color: #E0E0E0; /* A light gray for better contrast */
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* --- Header & Navigation --- */
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #00aaff; /* A vibrant blue for the main title */
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px; /* Adds space between the links */
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #E0E0E0;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+        
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        /* --- Search Bar --- */
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .search-input {
+            width: 80%;
+            max-width: 500px; /* Makes it responsive */
+            border-radius: 25px;
+            padding: 12px 20px;
+            border: 2px solid #333;
+            background-color: #242424;
+            color: #E0E0E0;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        .search-input:focus {
+            border-color: #00aaff;
+        }
+
+        .get-started-button {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .get-started-button button {
+            background-color: black;
+            color: #00aaff;
+            border-radius: 35px;
+            border-color: #00aaff;
+            padding: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-top: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .get-started-button button:hover {
+            background-color: #00aaff;
+            color: black;
+        }
+
+        /* --- Main Content Sections --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5em;
+            color: #00aaff;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        /* --- Product Section --- */
+        .product-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .product-section h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+            color: #00aaff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #1E1E1E;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 0 0 5px;
+        }
+
+        .product-card .price {
+            color: #00aaff;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            display: block;
+            width: 100%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: #00aaff;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .buy-button:hover {
+            background-color: #0077cc;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: #000;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social-links a {
+            color: #E0E0E0;
+            font-size: 1.5em;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #00aaff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CAPWELL</h1>
+        <nav>
+            <a href="Home.html" target="_top">HOME</a>
+            <a href="FULL CONTENT.html" target="_blank">FULL CONTENT</a>
+            <a href="ABOUT.html" target="_blank">ABOUT</a>
+        </nav>
+        <div class="search-container">
+            <input type="search" placeholder="Search..." class="search-input">
+        </div>
+    </header>
+    <a href="sign in.html" target="_blank" class="get-started-button">
+        <button>GET STARTED WITH CAPWELL !</button>
+    </a>
+    <main class="container">
+        <section class="hero-section">
+            <h2>Find Your Perfect Cap.</h2>
+            <p>Explore our exclusive collection of premium caps. Style meets comfort, designed for you.</p>
+        </section>
+
+        <section class="product-section">
+            <h2>Our Latest Collection</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.-eff6MsM4bFFA5v5lbGCPQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product 1">
+                    <h3>Classic Black Cap</h3>
+                    <p class="price">$29.99</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.84cwMZWTugXQikIO9pYehwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product 2">
+                    <h3>Urban Gray Cap</h3>
+                    <p class="price">$34.50</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.dJWg2F7SW1vKMBDN03lFSwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Product 3">
+                    <h3>Navy Sport Cap</h3>
+                    <p class="price">$25.00</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://th.bing.com/th/id/R.0077f807cc6be226960267835c5649aa?rik=iBC0qGWkOcCHHA&riu=http%3a%2f%2fwww.merchology.com%2fcdn%2fshop%2fproducts%2fC50MT5-Dark-Green-Vintage-White-1_grande.jpg%3fv%3d1571271418&ehk=o9V0oQpdiIW08csiklSRmPxUjBPcTB0QPk1nFtCXE%2fg%3d&risl=&pid=ImgRaw&r=0" alt="Product 4">
+                    <h3>Vintage Green Cap</h3>
+                    <p class="price">$38.99</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 CAPWELL. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="https://www.instagram.com/capwell_store/">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
