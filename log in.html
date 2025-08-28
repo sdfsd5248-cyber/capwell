@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPW2LL - Log In or Sign Up</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: black;
+            min-height: 100vh;
+            margin: 0;                   
+        }
+        h1 {
+            color: #00aaff;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 90px;
+            margin-top: 25px;
+        }
+
+        .login-card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            width: 396px;
+            text-align: center;
+            margin-top: 20px;
+            border-color: #00aaff;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #00aafff8;
+            padding-bottom: 20px;
+            color: #00aaff;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px 16px;
+            margin-bottom: 15px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 17px;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: black;
+            color: #00aaff;
+            border-color: #00aaff;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 6px;
+        }
+
+        button:hover {
+            background-color: #8fbdfa;
+        }
+
+        .links {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #1877f2;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .links a:hover {
+            text-decoration: none;
+        }
+
+        .Return-to-home-page {
+            text-decoration: none;
+            margin: 20px;
+        }
+    </style>
+</head>
+<a href="Home.html" class="Return-to-home-page"><----Return to home page.</a>
+<h1>CAPWELL</h1>
+<body>
+
+    <div class="login-card-container">
+        <div class="login-card">
+            <h2>Log in to Capw2ll</h2>
+            <form>
+                <input type="email" placeholder="Email address ">
+                <input type="password" placeholder="Password">
+                <button type="submit">Log in</button>
+            </form>
+            <div class="links">
+                <a href="sign up.html">Sign up</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> 
